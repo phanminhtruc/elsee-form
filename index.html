@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Medical Genomics Screening Requisition Form</title>
+
+        <!-- Reset CSS -->
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="./assets/css/styles.css" />
+    </head>
+    <body>
+        <header class="header">
+            <div class="content">
+                <!-- Logo -->
+                <img src="./assets/img/logo.jpg" alt="Elsee" />
+
+                <!-- Contact -->
+                <p class="contact">
+                    Elsee Medicine<br />
+                    Address: 10777 Westheimer Rd, Suite 1100, Houston, TX 77042,
+                    United States<br />
+                    Website:
+                    <a href="https://elseemedicine.com"
+                        >https://elseemedicine.com</a
+                    >
+                    <br />
+                    Email:
+                    <a href="mailto: info@elseemedicine.com"
+                        >info@elseemedicine.com</a
+                    >
+                </p>
+            </div>
+        </header>
+
+        <main>
+            <div class="content">
+                <!-- Subject -->
+                <h1 class="subject">
+                    Medical Genomics Screening Requisition Form
+                </h1>
+
+                <!-- Form -->
+                <form>
+                    <!-- Client information -->
+                    <fieldset class="information">
+                        <h2>Client Information</h2>
+                        <div class="row">
+                            <div class="item">
+                                <label
+                                    >Last Name<input name="last-name" required
+                                /></label>
+                            </div>
+                            <div class="item">
+                                <label
+                                    >Middle Name<input
+                                        name="middle-name"
+                                        required
+                                /></label>
+                            </div>
+                            <div class="item">
+                                <label
+                                    >First Name<input
+                                        name="first-name"
+                                        required
+                                /></label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="item">
+                                <label
+                                    >Gender
+                                    <select name="gender" required>
+                                        <option value="">(select one)</option>
+                                        <option value="1">Male</option>
+                                        <option value="2">Female</option>
+                                    </select>
+                                </label>
+                            </div>
+                            <div class="item">
+                                <label
+                                    >DOB (DD/MM/YYYY)<input
+                                        type="date"
+                                        name="dob"
+                                        required
+                                /></label>
+                            </div>
+                        </div>
+                        <div class="full-address">
+                            <label>Address<input name="address" /></label>
+                        </div>
+                        <div class="row">
+                            <div class="item">
+                                <label
+                                    >City/State/Province<input
+                                        name="c_s_p"
+                                        required
+                                /></label>
+                            </div>
+                            <div class="item">
+                                <label
+                                    >Postal Code<input
+                                        name="postal-code"
+                                        type="number"
+                                        required
+                                /></label>
+                            </div>
+                            <div class="item">
+                                <label
+                                    >Country<input name="country" required
+                                /></label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="item">
+                                <label
+                                    >Phone number<input
+                                        name="phone-number"
+                                        required
+                                /></label>
+                            </div>
+                            <div class="item">
+                                <label
+                                    >Fax number<input
+                                        name="fax-number"
+                                        required
+                                /></label>
+                            </div>
+                            <div class="item">
+                                <label
+                                    >Email<input
+                                        name="email"
+                                        type="email"
+                                        required
+                                /></label>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <!-- Other information -->
+                    <fieldset class="information">
+                        <h2>
+                            Genomic Specimen, Physician, Sample Collector, and
+                            Patient Assistant Information
+                        </h2>
+                        <div class="row">
+                            <div class="item">
+                                <label
+                                    >Specimen ID (TR code)<input
+                                        name="trcode"
+                                        required
+                                /></label>
+                            </div>
+                            <div class="item">
+                                <label
+                                    >Date of Collection<input
+                                        name="date-of-collection"
+                                        type="date"
+                                        required
+                                /></label>
+                            </div>
+                            <div class="item">
+                                <label
+                                    >Specimen Site<input
+                                        name="specimen-stite"
+                                        required
+                                /></label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="item">
+                                <label
+                                    >Facility Name<input
+                                        name="facility-name"
+                                        required
+                                /></label>
+                            </div>
+                            <div class="item">
+                                <label
+                                    >Physician’s Name<input
+                                        name="physician’s-name"
+                                        required
+                                /></label>
+                            </div>
+                            <div class="item">
+                                <label
+                                    >Specimen Collector’s Name<input
+                                        name="specimen-collector’s-name"
+                                        required
+                                /></label>
+                            </div>
+                        </div>
+                        <div class="full-address">
+                            <label
+                                >Facility Address or Collection Location
+                                <input name="address" required
+                            /></label>
+                        </div>
+                        <div class="row">
+                            <div class="item">
+                                <label
+                                    >Address (continued)<input
+                                        name="address-con"
+                                        required
+                                /></label>
+                            </div>
+                            <div class="item">
+                                <label
+                                    >Postal Code<input
+                                        name="postal-code-2"
+                                        type="number"
+                                        required
+                                /></label>
+                            </div>
+                            <div class="item">
+                                <label
+                                    >Country<input name="country" required
+                                /></label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="item">
+                                <label
+                                    >Fax number<input
+                                        name="fax-number-2"
+                                        required
+                                /></label>
+                            </div>
+                            <div class="item">
+                                <label
+                                    >Physician’s Phone Number<input
+                                        name="phys-phone"
+                                        required
+                                /></label>
+                            </div>
+                            <div class="item">
+                                <label
+                                    >Email<input
+                                        name="physician-email"
+                                        type="email"
+                                        required
+                                /></label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="item">
+                                <label
+                                    >Patient Assistant’s Name<input
+                                        name="patient-assistant’s-name"
+                                        required
+                                /></label>
+                            </div>
+                            <div class="item">
+                                <label
+                                    >Patient Assistant’s Phone Number<input
+                                        name="patient-assistant’s-phone"
+                                        required
+                                /></label>
+                            </div>
+                            <div class="item">
+                                <label
+                                    >Patient Assistant’s Email<input
+                                        name="patient-assistant’s-email"
+                                        type="email"
+                                        required
+                                /></label>
+                            </div>
+                        </div>
+                        <div class="note">
+                            <label
+                                >Notes: (e.g., level of urgency, information of
+                                additional physicians or patient family members
+                                to receive genomic results)</label
+                            ><textarea
+                                name="notes"
+                                rows="3"
+                                cols="80"
+                            ></textarea>
+                        </div>
+                    </fieldset>
+                    <!-- Test selection -->
+                    <!-- <fieldset class="test-selection">
+                        <h2 class="sub-title">Test Selection</h2>
+                        <div style="float: left; width: 55%">
+                            <div class="selection">
+                                <label
+                                    >Elsee Germline
+                                    <b>Cardiovascular Health</b> Genomics
+                                    Test<input
+                                        type="checkbox"
+                                        name="selection"
+                                        class="inline"
+                                /></label>
+                                <label
+                                    >Elsee Germline
+                                    <b>Adult and Senior</b> Genomics Test<input
+                                        type="checkbox"
+                                        name="selection"
+                                        class="inline"
+                                /></label>
+
+                                <label
+                                    >Elsee Germline
+                                    <b>Neurological Health</b> Genomics
+                                    Test<input
+                                        type="checkbox"
+                                        name="selection"
+                                        class="inline"
+                                /></label>
+                                <label
+                                    >Elsee Germline
+                                    <b>Organ System Health</b> Genomics
+                                    Test<input
+                                        type="checkbox"
+                                        name="selection"
+                                        class="inline"
+                                /></label>
+
+                                <label
+                                    >Elsee Germline
+                                    <b>Reproductive Health</b> Genomic
+                                    Test<input
+                                        type="checkbox"
+                                        name="selection"
+                                        class="inline"
+                                /></label>
+                            </div>
+                        </div>
+                        <div style="float: right; width: 45%">
+                            <div class="selection">
+                                <label
+                                    ><input
+                                        type="checkbox"
+                                        name="selection"
+                                        class="inline"
+                                    />Elsee Germline <b>Pediatric</b> Genomics
+                                    Test</label
+                                >
+                                <label
+                                    >Elsee Germline
+                                    <b>Nutrigenomics</b> Test<input
+                                        type="checkbox"
+                                        name="selection"
+                                        class="inline"
+                                /></label>
+                                <label
+                                    >Elsee Germline
+                                    <b>Pharmacogenomics</b> Test<input
+                                        type="checkbox"
+                                        name="selection"
+                                        class="inline"
+                                /></label>
+                                <label
+                                    >Elsee Germline
+                                    <b>Sport Medicine</b> Test<input
+                                        type="checkbox"
+                                        name="selection"
+                                        class="inline"
+                                /></label>
+                            </div>
+                        </div>
+                        <div style="float: left; width: 100%">
+                            <div class="selection-2">
+                                <label
+                                    >Elsee Germline<b
+                                        >PREMIUM Whole Genome Test</b
+                                    ><input
+                                        type="checkbox"
+                                        name="selection"
+                                        class="inline"
+                                /></label>
+                                <div class="inline">
+                                    <p class="coverage">Coverage</p>
+                                    <div class="test">
+                                        <label
+                                            >32X<input
+                                                type="checkbox"
+                                                name="selection"
+                                                class="inline"
+                                        /></label>
+                                    </div>
+                                    <div class="test">
+                                        <label
+                                            >64X<input
+                                                type="checkbox"
+                                                name="selection"
+                                                class="inline"
+                                        /></label>
+                                    </div>
+                                    <div class="test">
+                                        <label
+                                            >96X<input
+                                                type="checkbox"
+                                                name="selection"
+                                                class="inline"
+                                        /></label>
+                                    </div>
+                                    <div class="test">
+                                        <label
+                                            >128X<input
+                                                type="checkbox"
+                                                name="selection"
+                                                class="inline"
+                                        /></label>
+                                    </div>
+                                    <div class="test">
+                                        <label
+                                            >256X<input
+                                                type="checkbox"
+                                                name="selection"
+                                                class="inline"
+                                        /></label>
+                                    </div>
+                                </div>
+                                <label
+                                    >OncoMap GEM Extra – Whole Exome Cancer
+                                    Genomics Test of up to 24000 genes
+                                    <input
+                                        type="checkbox"
+                                        name="selection"
+                                        class="inline"
+                                    />
+                                </label>
+                                <p class="next-line">
+                                    for guiding cancer targeted therapy
+                                </p>
+                                <div class="last-line">
+                                    <label
+                                        >IHC Testing PD-L1 for guiding cancer
+                                        immunotherapy
+                                        <input
+                                            type="checkbox"
+                                            name="selection"
+                                            class="inline"
+                                        />
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset> -->
+
+                    <!-- Client’s Current Diagnosis/Treatment and Health History -->
+                    <fieldset class="history-1">
+                        <h2>
+                            Client’s Current Diagnosis/Treatment and Health
+                            History
+                        </h2>
+                        <div class="note">
+                            <label>Client’s Current Diagnosis/Treatment</label>
+                            <textarea
+                                name="history"
+                                rows="5"
+                                cols="80"
+                            ></textarea>
+                        </div>
+                        <div class="note">
+                            <label>Client’s Health History</label>
+                            <textarea
+                                name="history"
+                                rows="5"
+                                cols="80"
+                            ></textarea>
+                        </div>
+                        <div class="note">
+                            <label
+                                >Other notes about Client’s Health Status and
+                                Health History</label
+                            >
+                            <textarea
+                                name="history"
+                                rows="5"
+                                cols="80"
+                            ></textarea>
+                        </div>
+                    </fieldset>
+
+                    <!-- Family Health History -->
+                    <fieldset>
+                        <h2>Family Health History</h2>
+                        <div class="note">
+                            <label>Family Current Diagnosis/Treatment</label>
+                            <textarea
+                                name="health"
+                                rows="5"
+                                cols="80"
+                            ></textarea>
+                        </div>
+                        <div class="note">
+                            <label>Family Health History</label>
+                            <textarea
+                                name="health"
+                                rows="5"
+                                cols="80"
+                            ></textarea>
+                        </div>
+                        <div class="note">
+                            <label
+                                >Other notes about Family Health History</label
+                            >
+                            <textarea
+                                name="health"
+                                rows="5"
+                                cols="80"
+                            ></textarea>
+                        </div>
+                    </fieldset>
+
+                    <!-- Signature -->
+                    <fieldset>
+                        <div class="signature">
+                            <p>Current Date</p>
+                            <p id="hvn"></p>
+                            <script>
+                                var today = new Date();
+                                var date =
+                                    today.getDate() +
+                                    "-" +
+                                    (today.getMonth() + 1) +
+                                    "-" +
+                                    today.getFullYear();
+                                document.getElementById("hvn").innerHTML = date;
+                            </script>
+                            <p>Signature</p>
+                            <div class="sign">
+                                <label
+                                    >Full Name<input
+                                        name="full-name-sign"
+                                        required
+                                /></label>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <!--  -->
+                    <input type="submit" value="Submit" />
+                </form>
+            </div>
+        </main>
+    </body>
+</html>

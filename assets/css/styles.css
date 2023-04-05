@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #ffac1c;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Arial", sans-serif;
+    -webkit-text-size-adjust: 100%;
+}
+
+/* ========== Common ========== */
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.content {
+    width: 730px;
+    max-width: calc(100% - 0px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2 {
+    background-color: var(--primary-color);
+    padding: 8px 10px;
+    margin-top: 20px;
+    font-size: 1.7rem;
+    font-weight: 550;
+    border-radius: 5px;
+}
+
+input:not([type="checkbox"]),
+select,
+textarea {
+    display: block;
+    margin-top: 5px;
+    min-width: 100%;
+    min-height: 25px;
+    border-radius: 3px;
+    border: none;
+    background-color: #ffe4b5;
+}
+
+textarea {
+    min-width: 100%;
+}
+
+.full-address,
+.note {
+    margin-top: 12px;
+}
+
+/* ========== Header ========== */
+.header .content {
+    margin-top: 24px;
+}
+
+.header img {
+    max-width: 20%;
+}
+
+.header .contact {
+    margin-top: 16px;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+.header .contact a:hover {
+    color: #a39898;
+}
+
+/* ========== Subject ========== */
+.subject {
+    margin: 20px auto;
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+/* ========== Information ========== */
+.information .row {
+    display: flex;
+    margin-top: 12px;
+    gap: 10px;
+}
+
+.information .row .item:first-child {
+    width: 25%;
+}
+
+.information .row .item:nth-child(2) {
+    width: 35%;
+}
+
+.information .row .item:nth-child(3) {
+    width: 40%;
+}
+
+/* ========== Test selection ========== */
+.test-selection .sub-title {
+    background-color: #00f;
+    color: #fff;
+}
+
+.test-selection {
+    font-size: 1.5rem;
+}
+
+lable {
+    display: block;
+}
+
+/* ========== Client’s Current Diagnosis/Treatment and Health History ========== */
+.history-1 h2 {
+    color: #fff;
+    background-color: #3cb371;
+}
+
+.history-1 textarea {
+    background: #c9e4d6;
+}
+
+/* ========== Signature ========== */
+.signature {
+    margin-top: 30px;
+}
+
+.signature p,
+.signature .sign {
+    margin-top: 10px;
+}
+
+.signature .sign input {
+    min-width: 50%;
+    font-size: 2rem;
+}
+
+/* ========== Submit ========== */
+input[type="submit"] {
+    display: block;
+    width: 30%;
+    margin: 40px auto;
+    height: 4rem;
+    font-size: 1.8rem;
+    background-color: orange;
+    border-color: white;
+    min-width: 300px;
+    border-radius: 999px;
+}
