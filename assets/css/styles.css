@@ -24,7 +24,7 @@ a {
 
 .content {
     width: 1100px;
-    max-width: calc(100% - 10px);
+    max-width: calc(100% - 20px);
     margin-left: auto;
     margin-right: auto;
 }
@@ -35,6 +35,7 @@ h2 {
     margin-top: 20px;
     font-weight: 550;
     border-radius: 5px;
+    width: 1100px;
 }
 
 input:not([type="checkbox"]),
@@ -104,6 +105,7 @@ input[type="checkbox"]:checked {
     font-weight: 700;
     text-align: center;
     color: var(--primary-color);
+    width: 1100px;
 }
 
 /* ========== Information ========== */
@@ -126,6 +128,9 @@ input[type="checkbox"]:checked {
 }
 
 /* ========== Test selection ========== */
+.test-selection {
+    width: 1100px;
+}
 .test-selection .body {
     line-height: 1.8;
 }
@@ -202,9 +207,13 @@ input[type="submit"] {
     width: 30%;
     margin: 40px auto;
     height: 4rem;
-    font-size: 1.8rem;
+    font-size: 2rem;
     background-color: orange;
     border-color: white;
     min-width: 300px;
     border-radius: 999px;
+}
+
+.submit-btn {
+    width: 1100px;
 }
