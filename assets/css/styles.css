@@ -11,9 +11,9 @@ html {
 }
 
 body {
-    font-size: 1.6rem;
+    font-size: 2rem;
     font-family: "Arial", sans-serif;
-    -webkit-text-size-adjust: 100%;
+    -webkit--textsize-adjust: 100%;
 }
 
 /* ========== Common ========== */
@@ -40,10 +40,11 @@ h2 {
 input:not([type="checkbox"]),
 select,
 textarea {
+    font-size: 2rem;
     display: block;
     margin-top: 5px;
     min-width: 100%;
-    min-height: 25px;
+    min-height: 40px;
     border-radius: 3px;
     border: none;
     background-color: #ffe4b5;
@@ -54,8 +55,27 @@ textarea {
 }
 
 .full-address,
-.note {
+.note,
+.selection {
     margin-top: 12px;
+}
+
+b {
+    font-weight: 750;
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    outline: none;
+    transition: all 0.2s ease-in-out;
+}
+
+input[type="checkbox"]:checked {
+    border-color: #007bff;
 }
 
 /* ========== Header ========== */
@@ -90,7 +110,7 @@ textarea {
 .information .row {
     display: flex;
     margin-top: 12px;
-    gap: 10px;
+    gap: 20px;
 }
 
 .information .row .item:first-child {
@@ -106,21 +126,54 @@ textarea {
 }
 
 /* ========== Test selection ========== */
-.test-selection .sub-title {
+.test-selection .body {
+    line-height: 1.8;
+}
+
+.test-selection .selection {
+    display: flex;
+    gap: 50px;
+}
+
+.test-selection h2 {
     background-color: #00f;
     color: #fff;
 }
 
-.test-selection {
-    font-size: 1.5rem;
+.selection-column {
+    line-height: 1.8;
+}
+.selection-column label {
+    display: block;
 }
 
-lable {
+.test-selection input {
+    margin-bottom: 0;
+}
+
+/* ========== Coverage ========== */
+.coverage {
+    margin-left: 24px;
+}
+
+.coverage-radio {
+    display: inline;
+}
+.coverage-radio input {
+    display: initial;
+    min-width: initial;
+    min-height: initial;
+    margin-left: 40px;
+}
+
+/* ========== Last selections ========== */
+.last-selection lable {
     display: block;
 }
 
 /* ========== Client’s Current Diagnosis/Treatment and Health History ========== */
 .history-1 h2 {
+    margin-top: 10px;
     color: #fff;
     background-color: #3cb371;
 }
@@ -141,7 +194,6 @@ lable {
 
 .signature .sign input {
     min-width: 50%;
-    font-size: 2rem;
 }
 
 /* ========== Submit ========== */
